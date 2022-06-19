@@ -1,0 +1,6 @@
+/* when creating css custom properties, you want to create them  on the root selector */
+/* when creating css custom properties, the name begins double hyphen (--) or dash */
+:root {
+  --background-color: hsl(0, 0%, 11%);
+  --text-color: hsl(0, 0%, 100%);
+}

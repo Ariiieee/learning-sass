@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* scss partial like _boilerplate.scss*/
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+/* when creating css custom properties, you want to create them  on the root selector */
+/* when creating css custom properties, the name begins double hyphen (--) or dash */
+:root {
+  --background-color: hsl(0, 0%, 11%);
+  --text-color: hsl(0, 0%, 100%);
+}
+
+/* here, I want to forward all scss files in one file which i did above for boilerplate and typography */
+/* the whole scss files contained in global is forwarded to style.scss *//*# sourceMappingURL=style.css.map */
